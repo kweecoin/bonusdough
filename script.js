@@ -20,7 +20,7 @@ const OFFERS = [
     requirement: "Sign up only.",
     link: "https://spritz.finance"
   },
-  }
+  {
     brand: "SOFI CREDIT MONITORING",
     payout: "$10",
     country: "USA",
