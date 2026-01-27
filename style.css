@@ -14,7 +14,9 @@
   );
 }
 
-*{ box-sizing:border-box; }
+*{
+  box-sizing:border-box;
+}
 
 body{
   margin:0;
@@ -24,7 +26,7 @@ body{
 }
 
 /* =========================
-   HERO (banner image)
+   HERO / BANNER
    ========================= */
 .hero{
   position:relative;
@@ -45,7 +47,7 @@ body{
 }
 
 /* =========================
-   Top overlay (submit button only)
+   TOP BUTTON OVERLAY
    ========================= */
 .topbar{
   position:absolute;
@@ -55,25 +57,16 @@ body{
   padding:14px 16px;
   display:flex;
   justify-content:flex-end;
-  pointer-events:none; /* so only the button is clickable */
 }
 
-.topbar a{
-  pointer-events:auto;
-}
-
-/* =========================
-   Button
-   ========================= */
 .btn{
   padding:10px 14px;
   border-radius:14px;
-  border:1px solid rgba(255,255,255,.2);
+  border:1px solid rgba(255,255,255,.18);
   background:rgba(0,0,0,.55);
   color:#fff;
   font-weight:800;
   text-decoration:none;
-  backdrop-filter: blur(10px);
 }
 
 .btn.holo{
@@ -103,20 +96,14 @@ body{
 /* =========================
    SPACE BETWEEN BANNER + LIST
    ========================= */
-
-/* This is the main fix: NO negative margin */
 .wrap{
   max-width:1000px;
   margin:0 auto;
-  padding: 22px 16px 28px; /* top padding creates the gap */
-  margin-top: 0;           /* IMPORTANT: prevents covering banner */
+  padding:36px 16px 32px; /* THIS CREATES THE GAP */
 }
 
-/* If you want MORE space, increase this number:
-   padding-top: 30px / 40px / 50px etc. */
-
 /* =========================
-   Grid
+   GRID
    ========================= */
 .grid{
   display:grid;
@@ -131,15 +118,20 @@ body{
 }
 
 /* =========================
-   Cards
+   CARD (CLICKABLE)
    ========================= */
 .card{
   position:relative;
-  background:rgba(10,10,10,.95);
+  display:block;               /* important: card is an <a> */
+  background:var(--card);
   border-radius:22px;
   overflow:hidden;
+  border:1px solid rgba(255,255,255,.10);
   box-shadow:0 12px 40px rgba(0,0,0,.6);
-  border:1px solid rgba(255,255,255,.08);
+
+  text-decoration:none;        /* remove link look */
+  color:inherit;               /* no blue */
+  cursor:pointer;
 }
 
 .card::before{
@@ -147,7 +139,7 @@ body{
   position:absolute;
   inset:-2px;
   background:var(--holo);
-  opacity:.16;
+  opacity:.18;
   filter:blur(18px);
 }
 
@@ -155,7 +147,7 @@ body{
   content:"";
   position:absolute;
   inset:1px;
-  background:rgba(10,10,10,.95);
+  background:var(--card);
   border-radius:21px;
 }
 
