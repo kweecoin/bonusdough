@@ -30,6 +30,7 @@ body{
   height:min(60vh,520px);
   background:#000;
   overflow:hidden;
+  border-bottom:1px solid var(--stroke);
 }
 .heroImage img{
   width:100%;
@@ -80,16 +81,7 @@ body{
 .wrap{
   max-width:1000px;
   margin:0 auto;
-  padding:22px;
-}
-
-.heroText h1{
-  margin:10px 0 6px;
-  font-size:28px;
-}
-.heroText p{
-  margin:0 0 18px;
-  color:var(--muted);
+  padding:12px 18px 28px;
 }
 
 /* GRID */
@@ -115,7 +107,7 @@ body{
   position:absolute;
   inset:-2px;
   background:var(--holo);
-  opacity:.3;
+  opacity:.25;
   filter:blur(14px);
 }
 .card:after{
@@ -125,7 +117,11 @@ body{
   background:var(--card);
   border-radius:19px;
 }
-.cardInner{position:relative;z-index:2;padding:14px}
+.cardInner{
+  position:relative;
+  z-index:2;
+  padding:16px;
+}
 
 .name{font-weight:700}
 .payout{
@@ -134,7 +130,11 @@ body{
   margin:10px 0 8px;
 }
 
-.pills{display:flex;gap:8px;flex-wrap:wrap}
+.pills{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+}
 .pill{
   font-size:12px;
   padding:6px 10px;
@@ -143,6 +143,7 @@ body{
   color:var(--muted);
 }
 
+/* BUTTON */
 .btn{
   padding:10px 14px;
   border-radius:14px;
@@ -172,4 +173,7 @@ body{
   background:#000;
   border-radius:13px;
 }
-.btn.holo span{position:relative;z-index:1}
+.btn.holo span{
+  position:relative;
+  z-index:1;
+}
