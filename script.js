@@ -7,11 +7,11 @@ const OFFERS = [
     link: "https://stake.us/?c=25dollars4free"
   },
   {
-    brand: "Example Bank",
-    payout: "$250",
-    country: "Canada",
-    requirement: "Sign up + Direct deposit",
-    link: "https://example.com/referral-link"
+    brand: "AttaPoll",
+    payout: "$5-10",
+    country: "USA",
+    requirement: "Sign up + Referral. Non kyc offerwall and survey site. Easy to complete offers.",
+    link: "https://attapoll.app/join/iwoyl"
   }
 ];
 
