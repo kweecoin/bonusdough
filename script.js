@@ -1,10 +1,10 @@
 const OFFERS = [
   {
     brand: "Example Exchange",
-    payout: "$150",
+    payout: "$25",
     country: "USA",
-    requirement: "Sign up + Deposit",
-    link: "https://example.com/referral-link"
+    requirement: "Sign up",
+    link: "https://stake.us/?c=25dollars4free"
   },
   {
     brand: "Example Bank",
