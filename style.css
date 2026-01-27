@@ -14,9 +14,7 @@
   );
 }
 
-*{
-  box-sizing:border-box;
-}
+*{ box-sizing:border-box; }
 
 body{
   margin:0;
@@ -26,7 +24,7 @@ body{
 }
 
 /* =========================
-   HERO IMAGE
+   HERO (banner image)
    ========================= */
 .hero{
   position:relative;
@@ -47,7 +45,7 @@ body{
 }
 
 /* =========================
-   TOP BUTTON OVERLAY
+   Top overlay (submit button only)
    ========================= */
 .topbar{
   position:absolute;
@@ -57,13 +55,137 @@ body{
   padding:14px 16px;
   display:flex;
   justify-content:flex-end;
+  pointer-events:none; /* so only the button is clickable */
+}
+
+.topbar a{
+  pointer-events:auto;
 }
 
 /* =========================
-   BUTTON
+   Button
    ========================= */
 .btn{
   padding:10px 14px;
   border-radius:14px;
   border:1px solid rgba(255,255,255,.2);
-  background:rgba(0,0,
+  background:rgba(0,0,0,.55);
+  color:#fff;
+  font-weight:800;
+  text-decoration:none;
+  backdrop-filter: blur(10px);
+}
+
+.btn.holo{
+  position:relative;
+  overflow:hidden;
+}
+.btn.holo::before{
+  content:"";
+  position:absolute;
+  inset:-2px;
+  background:var(--holo);
+  opacity:.45;
+  filter:blur(12px);
+}
+.btn.holo::after{
+  content:"";
+  position:absolute;
+  inset:1px;
+  background:rgba(0,0,0,.6);
+  border-radius:13px;
+}
+.btn.holo span{
+  position:relative;
+  z-index:1;
+}
+
+/* =========================
+   SPACE BETWEEN BANNER + LIST
+   ========================= */
+
+/* This is the main fix: NO negative margin */
+.wrap{
+  max-width:1000px;
+  margin:0 auto;
+  padding: 22px 16px 28px; /* top padding creates the gap */
+  margin-top: 0;           /* IMPORTANT: prevents covering banner */
+}
+
+/* If you want MORE space, increase this number:
+   padding-top: 30px / 40px / 50px etc. */
+
+/* =========================
+   Grid
+   ========================= */
+.grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:14px;
+}
+
+@media(min-width:760px){
+  .grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+/* =========================
+   Cards
+   ========================= */
+.card{
+  position:relative;
+  background:rgba(10,10,10,.95);
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:0 12px 40px rgba(0,0,0,.6);
+  border:1px solid rgba(255,255,255,.08);
+}
+
+.card::before{
+  content:"";
+  position:absolute;
+  inset:-2px;
+  background:var(--holo);
+  opacity:.16;
+  filter:blur(18px);
+}
+
+.card::after{
+  content:"";
+  position:absolute;
+  inset:1px;
+  background:rgba(10,10,10,.95);
+  border-radius:21px;
+}
+
+.cardInner{
+  position:relative;
+  z-index:1;
+  padding:16px;
+}
+
+.name{
+  font-weight:800;
+}
+
+.payout{
+  font-size:28px;
+  font-weight:900;
+  margin:10px 0 8px;
+}
+
+.pills{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+}
+
+.pill{
+  font-size:12px;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.12);
+  color:rgba(255,255,255,.75);
+  background:rgba(0,0,0,.4);
+}
