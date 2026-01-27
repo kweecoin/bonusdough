@@ -1,16 +1,6 @@
 const OFFERS = [
-  {
-    brand: "Example Exchange",
-    payout: "$150",
-    country: "USA",
-    requirement: "Sign up + Deposit"
-  },
-  {
-    brand: "Example Bank",
-    payout: "$250",
-    country: "Canada",
-    requirement: "Sign up + Direct deposit"
-  }
+  { brand: "Example Exchange", payout: "$150", country: "USA", requirement: "Sign up + Deposit" },
+  { brand: "Example Bank", payout: "$250", country: "Canada", requirement: "Sign up + Direct deposit" }
 ];
 
 const grid = document.getElementById("grid");
