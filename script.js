@@ -35,7 +35,14 @@ document.addEventListener("DOMContentLoaded", () => {
       country: "USA",
       requirement: "Sign up + $200 deposit (required).",
       link: "https://current.com/get-started/?creator_code=JACOBID311&impression_id=f40dd529-c101-4e46-9af2-ae095a91ab9f"
-    }
+    },
+        {
+      brand: "Splash Sports - Sports betting app",
+      payout: "$10",
+      country: "USA",
+      requirement: "Sign up.",
+      link: "https://link.splashsports.com/6OOI/c36h0gvs"
+        }
   ];
 
   const grid = document.getElementById("grid");
