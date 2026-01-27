@@ -1,6 +1,6 @@
 const OFFERS = [
   {
-    brand: "Example Exchange",
+    brand: "STAKE.US",
     payout: "$25",
     country: "USA",
     requirement: "Sign up",
