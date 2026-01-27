@@ -19,7 +19,13 @@ const OFFERS = [
     country: "USA",
     requirement: "Sign up only.",
     link: "https://spritz.finance"
+  },
   }
+    brand: "SOFI CREDIT MONITORING",
+    payout: "$10",
+    country: "USA",
+    requirement: "Sign up only.",
+    link: "https://www.sofi.com/invite/relay?gcp=fe4784ce-b683-4bf4-bd7e-895d9d7c98bd&isAliasGcp=false"
 ];
 
 const grid = document.getElementById("grid");
