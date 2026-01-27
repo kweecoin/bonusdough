@@ -12,6 +12,13 @@ const OFFERS = [
     country: "USA",
     requirement: "Sign up + Referral. Non kyc offerwall and survey site. Easy to complete offers.",
     link: "https://attapoll.app/join/iwoyl"
+  },
+  {
+    brand: "Spritz.Finance",
+    payout: "$35",
+    country: "USA",
+    requirement: "Sign up only.",
+    link: "https://spritz.finance"
   }
 ];
 
