@@ -14,10 +14,10 @@ const OFFERS = [
     link: "https://attapoll.app/join/iwoyl"
   },
   {
-    brand: "Spritz.Finance",
+    brand: "Spritz.Finance-CRYPTO",
     payout: "$35",
     country: "USA",
-    requirement: "Sign up only.",
+    requirement: "Sign up only and recieve $35 in Crypto.",
     link: "https://spritz.finance"
   },
   {
@@ -26,6 +26,13 @@ const OFFERS = [
     country: "USA",
     requirement: "Sign up only.",
     link: "https://www.sofi.com/invite/relay?gcp=fe4784ce-b683-4bf4-bd7e-895d9d7c98bd&isAliasGcp=false"
+  },
+  {
+    brand: "Current Bank",
+    payout: "$100",
+    country: "USA",
+    requirement: "Sign up and make a deposit of $200 or more to recieve $100",
+    link: "https://current.com/get-started/?creator_code=JACOBID311&impression_id=f40dd529-c101-4e46-9af2-ae095a91ab9f"
   }
 ];
 
