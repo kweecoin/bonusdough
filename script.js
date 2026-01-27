@@ -1,58 +1,67 @@
-const OFFERS = [
-  {
-    brand: "STAKE.US",
-    payout: "$25",
-    country: "USA",
-    requirement: "Sign up",
-    link: "https://stake.us/?c=25dollars4free"
-  },
-  {
-    brand: "AttaPoll",
-    payout: "$5-10",
-    country: "USA",
-    requirement: "Sign up + Referral. Non kyc offerwall and survey site. Easy to complete offers.",
-    link: "https://attapoll.app/join/iwoyl"
-  },
-  {
-    brand: "Spritz.Finance-CRYPTO",
-    payout: "$35",
-    country: "USA",
-    requirement: "Sign up only and recieve $35 in Crypto.",
-    link: "https://spritz.finance"
-  },
-  {
-    brand: "SOFI CREDIT MONITORING",
-    payout: "$10",
-    country: "USA",
-    requirement: "Sign up only.",
-    link: "https://www.sofi.com/invite/relay?gcp=fe4784ce-b683-4bf4-bd7e-895d9d7c98bd&isAliasGcp=false"
-  },
-  {
-    brand: "Current Bank",
-    payout: "$100",
-    country: "USA",
-    requirement: "Sign up and make a deposit of $200 or more to recieve $100",
-    link: "https://current.com/get-started/?creator_code=JACOBID311&impression_id=f40dd529-c101-4e46-9af2-ae095a91ab9f"
+document.addEventListener("DOMContentLoaded", () => {
+
+  const OFFERS = [
+    {
+      brand: "STAKE.US",
+      payout: "$25",
+      country: "USA",
+      requirement: "Sign up",
+      link: "https://stake.us/?c=25dollars4free"
+    },
+    {
+      brand: "AttaPoll",
+      payout: "$5–10",
+      country: "USA",
+      requirement: "Sign up + referral. Non-KYC offerwall & surveys.",
+      link: "https://attapoll.app/join/iwoyl"
+    },
+    {
+      brand: "Spritz.Finance (Crypto)",
+      payout: "$35",
+      country: "USA",
+      requirement: "Sign up only and receive $35 in crypto.",
+      link: "https://spritz.finance"
+    },
+    {
+      brand: "SoFi Credit Monitoring",
+      payout: "$10",
+      country: "USA",
+      requirement: "Sign up only.",
+      link: "https://www.sofi.com/invite/relay?gcp=fe4784ce-b683-4bf4-bd7e-895d9d7c98bd&isAliasGcp=false"
+    },
+    {
+      brand: "Current Bank",
+      payout: "$100",
+      country: "USA",
+      requirement: "Sign up + $200 deposit (required).",
+      link: "https://current.com/get-started/?creator_code=JACOBID311&impression_id=f40dd529-c101-4e46-9af2-ae095a91ab9f"
+    }
+  ];
+
+  const grid = document.getElementById("grid");
+
+  if (!grid) {
+    console.error("Grid element not found");
+    return;
   }
-];
 
-const grid = document.getElementById("grid");
-
-grid.innerHTML = OFFERS.map(o => `
-  <a
-    href="${o.link}"
-    class="card"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Open ${o.brand} referral link"
-  >
-    <div class="cardInner">
-      <div class="name">${o.brand}</div>
-      <div class="payout">${o.payout}</div>
-      <div class="pills">
-        <div class="pill">🌍 ${o.country}</div>
-        <div class="pill">🧾 ${o.requirement}</div>
+  grid.innerHTML = OFFERS.map(o => `
+    <a
+      href="${o.link}"
+      class="card"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Open ${o.brand} referral link"
+    >
+      <div class="cardInner">
+        <div class="name">${o.brand}</div>
+        <div class="payout">${o.payout}</div>
+        <div class="pills">
+          <div class="pill">🌍 ${o.country}</div>
+          <div class="pill">🧾 ${o.requirement}</div>
+        </div>
       </div>
-    </div>
-  </a>
-`).join("");
+    </a>
+  `).join("");
+
+});
