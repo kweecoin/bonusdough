@@ -1,10 +1,10 @@
 const OFFERS = [
   {
     brand: "Example Exchange",
-    payout: "$25",
+    payout: "$150",
     country: "USA",
-    requirement: "Sign up",
-    link: "https://stake.us/?c=25dollars4free"
+    requirement: "Sign up + Deposit",
+    link: "https://example.com/referral-link"
   },
   {
     brand: "Example Bank",
@@ -18,7 +18,13 @@ const OFFERS = [
 const grid = document.getElementById("grid");
 
 grid.innerHTML = OFFERS.map(o => `
-  <a class="card" href="${o.link}" target="_blank" rel="noopener noreferrer">
+  <a
+    href="${o.link}"
+    class="card"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Open ${o.brand} referral link"
+  >
     <div class="cardInner">
       <div class="name">${o.brand}</div>
       <div class="payout">${o.payout}</div>
