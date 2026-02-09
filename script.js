@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
 
   const OFFERS = [
@@ -49,6 +50,13 @@ document.addEventListener("DOMContentLoaded", () => {
       country: "USA",
       requirement: "Sign up & Deposit $5 and get $5.",
       link: "https://publishers.revenueuniverse.com/click.php?affiliate=8189&campaign=42991&sid=SFB_1090___&app=1090&sid2=f27d3a5f-1271-4b31-9082-39a6b"
+    },
+    {
+      brand: "CEX.IO",
+      payout: "30% of any trade or buy",
+      country: "USA",
+      requirement: "Refferal",
+      link: "https://cex.io/join?c=20&a=152050&o=3&s=sc&prid=referral-promo"
     },
   ];
   const grid = document.getElementById("grid"); if (!grid) {
