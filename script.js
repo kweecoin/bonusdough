@@ -16,6 +16,13 @@ document.addEventListener("DOMContentLoaded", () => {
       link: "https://www.bitunix.com/register?inviteCode=bhjwaz"
     },
     {
+      brand: "Bitunix Pro - Crytpo Trading & Wallet",
+      payout: "18% Of All Trades & Buys",
+      country: "USA",
+      requirement: "Sign up + referral.",
+      link: ""
+    },
+    {
       brand: "AttaPoll",
       payout: "OfferWall",
       country: "USA",
