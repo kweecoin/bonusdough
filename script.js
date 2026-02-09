@@ -16,11 +16,11 @@ document.addEventListener("DOMContentLoaded", () => {
       link: "https://www.bitunix.com/register?inviteCode=bhjwaz"
     },
     {
-      brand: "Bitunix Pro - Crytpo Trading & Wallet",
-      payout: "18% Of All Trades & Buys",
+      brand: "SpeedWallet - Crypto Wallet/Trade",
+      payout: "10000 Satoshi & More Rewards",
       country: "USA",
-      requirement: "Sign up + referral.",
-      link: ""
+      requirement: "Sign up + referral",
+      link: "https://links.speed.app/referral?referral_code=V3UK5I"
     },
     {
       brand: "AttaPoll",
