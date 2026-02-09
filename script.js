@@ -23,11 +23,11 @@ document.addEventListener("DOMContentLoaded", () => {
       link: "https://spritz.finance"
     },
     {
-      brand: "Earnlab",
-      payout: "$10",
+      brand: "Earnlab.com",
+      payout: "Earn $ from offers",
       country: "USA",
       requirement: "Sign up & Earn",
-      link: "https://www.sofi.com/invite/relay?gcp=fe4784ce-b683-4bf4-bd7e-895d9d7c98bd&isAliasGcp=false"
+      link: "https://earnlab.com/r/787"
     },
     {
       brand: "Current Bank",
