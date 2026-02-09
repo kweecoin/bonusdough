@@ -10,10 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       brand: "AttaPoll",
-      payout: "$5–10",
+      payout: "OfferWall",
       country: "USA",
       requirement: "Sign up + referral. Non-KYC offerwall & surveys.",
-      link: "https://attapoll.app/join/iwoyl"
+      link: "https://attapoll.app/join/axqlj"
     },
     {
       brand: "Spritz.Finance (Crypto)",
@@ -23,10 +23,10 @@ document.addEventListener("DOMContentLoaded", () => {
       link: "https://spritz.finance"
     },
     {
-      brand: "SoFi Credit Monitoring",
+      brand: "Earnlab",
       payout: "$10",
       country: "USA",
-      requirement: "Sign up only.",
+      requirement: "Sign up & Earn",
       link: "https://www.sofi.com/invite/relay?gcp=fe4784ce-b683-4bf4-bd7e-895d9d7c98bd&isAliasGcp=false"
     },
     {
