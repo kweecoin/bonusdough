@@ -1,4 +1,3 @@
-https://www.bitunix.com/register?inviteCode=bhjwaz
 document.addEventListener("DOMContentLoaded", () => {
 
   const OFFERS = [
